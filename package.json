@@ -1,0 +1,14 @@
+{
+  "name": "consolr",
+  "version": "0.8.0",
+  "description": "A handler for the input from terminal (process.stdin) acting as events to handle internal server commands",
+  "keywords": [],
+  "main": "index.js",
+  "repository": "https://github.com/dnetix/consolr.git",
+  "homepage": "https://github.com/dnetix/consolr",
+  "scripts": {
+    "test": "node test"
+  },
+  "author": "Diego Calle",
+  "license": "MIT"
+}
