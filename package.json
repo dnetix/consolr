@@ -1,6 +1,6 @@
 {
   "name": "consolr",
-  "version": "0.8.1",
+  "version": "0.9.0",
   "description": "A handler for the input from terminal (process.stdin) acting as events to handle internal server commands",
   "keywords": [],
   "main": "index.js",
@@ -10,5 +10,8 @@
     "test": "node test"
   },
   "author": "Diego Calle",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "fbbk-json": "0.0.8"
+  }
 }

@@ -1,4 +1,5 @@
 var consolr = require('../index');
+consolr.debug = true;
 
 console.log("Hello, To use this package just subscribe to the consolr event, or if you want custom events just start typing :YOUR_CUSTOM_EVENT \
 	\nExample:\n:custom text that you want to send and ENTER \
@@ -9,7 +10,16 @@ consolr.on('command', function(command){
 });
 
 consolr.on('custom', function(command){
-	console.log("Custom " + command);
+	console.log("Custom");
+	console.log(command);
+});
+
+consolr.on('json', function(command){
+	console.log("JSON");
+	console.log(command);
+	if(command.tocall){
+		console.log(command[command.tocall]);
+	}
 });
 
 consolr.on('exit', function(){

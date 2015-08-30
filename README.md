@@ -3,7 +3,7 @@
 A event handler for the input from terminal (process.stdin) acting as events to use as internal server commands in node.js
 
 ### Version
-0.8.1
+0.9.0
 
 ### Installation
 
@@ -15,7 +15,12 @@ $ npm install consolr
 
 ### Usage
 
-When you type some text on the prompt after running your app and press enter eg. exit 
+When you type some text on the prompt after running your app and press enter eg.
+
+```sh
+exit
+```
+
 ```javascript
 var consolr = require('consolr');
 consolr.on('command', function(command){
@@ -26,7 +31,11 @@ consolr.on('command', function(command){
     }
 });
 ```
-Custom events, to create custom events just type :yourcustomevent and then some text if you need it. eg. :exit Closing the app
+Custom events, to create custom events just type :yourcustomevent and then some text if you need it. eg.
+```sh
+:exit Closing the app
+```
+
 ```javascript
 var consolr = require('consolr');
 consolr.on('exit', function(command){
@@ -35,6 +44,18 @@ consolr.on('exit', function(command){
 });
 ```
 The second example does the same as the first one
+
+Now accepts JSON code, for example (It also works on the predefined event)
+```sh
+:someevent {message: 'Testing JSON', key:'value'}
+```
+```javascript
+var consolr = require('consolr');
+consolr.on('someevent', function(data){
+    console.log(data.message);
+});
+```
+That way it will only show the message because it will pass a JSON object instead of only string
 
 ### Development
 
