@@ -3,7 +3,7 @@
 A event handler for the input from terminal (process.stdin) acting as events to use as internal server commands in node.js
 
 ### Version
-0.8.0
+0.8.1
 
 ### Installation
 
@@ -26,7 +26,7 @@ consolr.on('command', function(command){
     }
 });
 ```
-Custom events, to create custom events just type :yourcustomevent and then some text if you need it. eg. :exit "Closing the app"
+Custom events, to create custom events just type :yourcustomevent and then some text if you need it. eg. :exit Closing the app
 ```javascript
 var consolr = require('consolr');
 consolr.on('exit', function(command){

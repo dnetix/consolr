@@ -1,6 +1,6 @@
 {
   "name": "consolr",
-  "version": "0.8.0",
+  "version": "0.8.1",
   "description": "A handler for the input from terminal (process.stdin) acting as events to handle internal server commands",
   "keywords": [],
   "main": "index.js",
