@@ -10,5 +10,8 @@
     "test": "node test"
   },
   "author": "Diego Calle",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "fbbk-json": "0.0.8"
+  }
 }
