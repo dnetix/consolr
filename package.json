@@ -1,8 +1,8 @@
 {
   "name": "consolr",
-  "version": "0.9.0",
-  "description": "A handler for the input from terminal (process.stdin) acting as events to handle internal server commands",
-  "keywords": [],
+  "version": "0.9.1",
+  "description": "A utility to use with the input from terminal (process.stdin) while the application is running and emit events to handle internal server commands",
+  "keywords": ["command", "utility", "terminal", "console"],
   "main": "index.js",
   "repository": "https://github.com/dnetix/consolr.git",
   "homepage": "https://github.com/dnetix/consolr",
@@ -11,6 +11,9 @@
   },
   "author": "Diego Calle",
   "license": "MIT",
+  "bugs": {
+      "url": "https://github.com/dnetix/consolr/issues"
+  },
   "dependencies": {
     "fbbk-json": "0.0.8"
   }
